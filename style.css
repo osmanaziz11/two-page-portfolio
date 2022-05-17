@@ -1,0 +1,252 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+box-sizing: border-box;
+background-color: black;
+}
+
+:root
+{
+   
+}
+#loader{width: 100%;
+height: 100vh;
+background-color: rgb(219, 37, 37);
+position: absolute;
+z-index: 9999;
+}
+#nav-container img
+{
+    
+}
+
+  /* ------ Navigation Bar Styling -------- */
+#nav-container
+{
+    width: 100%;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+   animation: nav-animation 0.7s ease-in 0.2s 1 both;
+position: relative; 
+z-index: 1;
+background-color: var(--bg-color);
+}
+
+     /* Logo Styling */
+     #nav-container h1
+     {
+         position: relative;
+         top: 12%;
+         left: 18%;
+         background: none;
+         font-size: 1.5rem;
+         font-weight: 100;
+         font-family: 'Red Hat Text', sans-serif
+     }
+     
+     .logo-ink
+     {
+         font-size: 1rem;
+         position: relative;
+         left: 9px;
+         background-color: white;
+         color: rgb(0, 0, 0);
+         padding: 4px 5px;
+         border-radius: 2px;
+     }
+     
+     .logo-vertical
+     {
+         font-size: 2rem;
+         position: relative;
+         left: 6px;
+         bottom: 3px;
+     }
+     
+ 
+     .logo-studio
+     {
+         position: relative;
+         left: 4px;
+         font-size: 1.7rem;
+         top: 3px;
+     }
+
+ /* ----- Menu Bar Styling ------ */
+     .menu-bar
+     {
+         display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Julius Sans One', sans-serif;
+        }
+    
+        .menu-bar >ul> li
+     {
+         display: inline-block;
+     margin: 10px;
+     text-transform: uppercase;
+    }
+ 
+    .menu-bar >ul> li i
+    {
+        color: black;
+        font-size: 18px;
+        position: relative;
+        top: 6px;
+        left: 6px;
+    }
+
+    .menu-bar >ul a
+    {
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        font-weight: 900;
+        transition-property: color;
+        transition-duration: 0.2s;
+        color: white;
+
+        transition-timing-function: ease-out;
+    }
+
+    .menu-bar ul li a:hover{
+        
+        color: #6acc62;text-decoration: none;}
+
+    .menu-bar ul li:hover .sub-menu-container{ display: none;}
+        /* DropDown Styling */
+        .sub-menu-container
+        {
+            width: 180px;
+            position: absolute;
+            margin-top: 0%;
+            margin-left: -8px;
+            display: none;
+            padding: 10px;
+        }
+    
+        .sub-menu-container ul
+        {
+            background-color: hsl(0deg 0% 100%);
+            padding: 9px;
+            width: 179px;
+            border-top: 3px solid #6acc62;    
+        }
+    
+        .sub-menu-container ul li
+        {
+            font-size: 2.3rem;
+            background-color: white;
+        }
+ /* ------- Social Icons Styling -------     */
+     .icon-container
+    {
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+    }
+
+    .icon-container> ul> li
+    {
+     display: inline-block;
+     margin: 10px;
+     padding-left: 10px;
+     margin-left: 15px;
+    }
+
+    .icon-container a:hover i { color: #6acc62;}
+  
+    /* Check Box Styling */
+    input[type='checkbox']{display: none;}
+
+    /* Toggle Button Styling */
+   .toggle-button{display: none ;}
+
+/* ------ Aside ------ */
+.sidebar
+{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    z-index: 43;
+    left: 100%;
+    
+
+}
+input[type='checkbox']:checked ~ .sidebar
+{
+ color: red;
+ left: 0;
+}
+/* --------- Section Container --------- */
+
+#box
+{
+
+    border: 2px solid white;
+    padding: 0px !important;
+   
+}
+#box img
+{
+    width: 100%;
+height: 100%;
+filter: brightness(100%);
+z-index: 1;
+}
+#box img:hover
+{   filter: brightness(60%); }
+#box-container
+{
+    padding: 10px;
+  
+  /* height: calc(100vh - 78px - 18px); */
+  
+}
+
+    /* ----- Button ------ */
+.custom-btn
+{
+    z-index: 10;
+    position: absolute;
+    width: 41%;
+    padding: 12px;
+    background: none;
+    border: 2px solid white;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+    /* ----- Footer Styling ------- */
+    #footer
+    {  
+     
+       font-family: 'Red Hat Text', sans-serif;
+       font-size: 0.9rem;
+       font-weight: 100;
+       background-color: var(--bg-color);
+       border-top: 1px solid #242323;   
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    
+    /* =======  key Frames ======== */
+
+      @keyframes nav-animation
+      {
+          from
+          {
+              top: -100px;
+          }
+          to
+          {
+              top: 0px;
+          }
+      }
+     

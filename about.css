@@ -1,0 +1,110 @@
+
+section ul li
+{
+display: inline-block;
+padding: 16px;
+}
+section h2
+{
+    margin-top: 4px;
+    font-size: 1.7em;
+
+}
+#top
+{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1px;
+    border: 1px solid #ebdfdf;
+    transition-property: all;
+    transition-duration: 1s;
+transition-timing-function: ease-in;
+}
+
+#sect-b
+{
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.img-width
+{
+    width: 60%;
+    display: block;
+}
+#underline
+{
+    border-bottom: 1px solid white;
+    transition-property: all;
+    transition-duration: 1s;
+transition-timing-function: ease-in;
+
+}
+#owner-row
+{
+    font-family: 'Quicksand', sans-serif;
+    transition-property: all;
+    transition-duration: 0.2s;
+
+
+}
+#underline h1
+{
+    font-family: 'Quicksand', sans-serif;
+    transition-property: all;
+    transition-duration: 1s;
+transition-timing-function: ease-in;
+
+    font-size: 1.7rem;
+}
+#row-2 h3
+{font-family: 'Julius Sans One', sans-serif;}
+#img-col
+{
+    border: 2px solid white;
+    padding: 0px;
+    margin-right: 45px;
+}
+#cap-col
+{
+    border: 1px solid red;
+    padding: 0px;
+}
+#row-1
+{
+}
+#row-1 h1
+{
+display: inline-block;
+font-family: 'Julius Sans One', sans-serif;
+border-bottom: 1px solid white;
+}
+#footer
+{  
+ 
+   font-family: 'Red Hat Text', sans-serif;
+   font-size: 0.9rem;
+   font-weight: 100;
+   background-color: var(--bg-color);
+   border-top: 1px solid #242323;   
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+ 
+    /* =======  key Frames ======== */
+
+    @keyframes nav-animation
+    {
+        from
+        {
+            top: -100px;
+        }
+        to
+        {
+            top: 0px;
+        }
+    }
+   

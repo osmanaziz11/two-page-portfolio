@@ -1,0 +1,11 @@
+@media (max-width:1070px)
+{
+ .toggle-button{display: block;}
+ .icon-container ul{display: none;}
+ .icon-container {    justify-content: flex-end; }
+ .menu-bar ul{display: none;}
+.toggle-button i
+{    font-size: 2.2rem;
+    margin-left: -38%;
+}
+}
